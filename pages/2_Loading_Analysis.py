@@ -176,9 +176,31 @@ if master_df.empty:
     st.warning(t["warn_no_master"])
 else:
     combined_df = master_df[['案件名稱', '案件類型', '複雜度評分']].copy()
+    
     if not roi_df.empty:
-        combined_df = pd.merge(combined_df, roi_df[['案件名稱', 'PM名單', 'Staff名單']], on='案件名稱', how='left').fillna("")
+        # 1. 自動清洗欄位名稱，去除不可見的空格或換行
+        roi_df.columns = roi_df.columns.astype(str).str.strip()
+        
+        # 2. 定義目標欄位
+        target_cols = ['案件名稱', 'PM名單', 'Staff名單']
+        
+        # 3. 檢查哪些欄位是真的存在的
+        existing_cols = [c for c in target_cols if c in roi_df.columns]
+        
+        # 4. 如果最重要的 '案件名稱' 存在，才進行合併
+        if '案件名稱' in existing_cols:
+            combined_df = pd.merge(combined_df, roi_df[existing_cols], on='案件名稱', how='left').fillna("")
+            
+            # 5. 如果缺了 PM 或 Staff 欄位，手動補齊空值，避免後續繪圖程式碼出錯
+            for col in ['PM名單', 'Staff名單']:
+                if col not in combined_df.columns:
+                    combined_df[col] = ""
+        else:
+            # 如果連 '案件名稱' 都不見了，代表 Excel 結構完全不對
+            st.error(f"❌ 關鍵錯誤：在 ROI 資料中找不到 '案件名稱' 欄位。目前偵測到的欄位有：{roi_df.columns.tolist()}")
+            combined_df['PM名單'], combined_df['Staff名單'] = "", ""
     else:
+        # 如果 roi_df 是空的，給予預設空值
         combined_df['PM名單'], combined_df['Staff名單'] = "", ""
 
     tab_assign, tab_dist, tab_report = st.tabs(t["tabs"])
@@ -334,4 +356,5 @@ else:
                 "占比": t["col_ratio"], "加權負荷": t["col_weighted"]
             }).reset_index(drop=True)
             person_detail.index += 1
+
             st.table(person_detail)
