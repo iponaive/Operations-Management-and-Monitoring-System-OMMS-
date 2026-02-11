@@ -13,6 +13,9 @@
 </div>
 </br>
 
+專案架構:
+<img width="1157" height="617" alt="截圖 2026-02-11 上午11 35 52" src="https://github.com/user-attachments/assets/e21997c3-9077-4817-ab7a-f2e3e075991d" />
+
 
 https://iponaive-omms.streamlit.app/  
 <img width="1920" height="1145" alt="image" src="https://github.com/user-attachments/assets/4b980b80-b1d5-4fb5-8dd5-b9bf9029075b" />
@@ -22,6 +25,5 @@ https://iponaive-omms.streamlit.app/
 <img width="1915" height="1198" alt="image" src="https://github.com/user-attachments/assets/74429669-0683-4014-a513-2c48b1f96c18" />
 
 
-專案架構:
-<img width="1157" height="617" alt="截圖 2026-02-11 上午11 35 52" src="https://github.com/user-attachments/assets/e21997c3-9077-4817-ab7a-f2e3e075991d" />
+
 
