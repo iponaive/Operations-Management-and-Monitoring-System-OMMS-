@@ -9,6 +9,10 @@ Target Audience:Enterprise RDM, departments facing manpower allocation challenge
 </br>
 https://iponaive-omms.streamlit.app/  
 <img width="1920" height="1145" alt="image" src="https://github.com/user-attachments/assets/4b980b80-b1d5-4fb5-8dd5-b9bf9029075b" />
+<img width="1920" height="1195" alt="image" src="https://github.com/user-attachments/assets/db57fe0d-648a-4cd5-bec6-ae3f75c1b5cc" />
+<img width="1920" height="1193" alt="image" src="https://github.com/user-attachments/assets/64986e53-6bdc-4716-99fd-36334145d318" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c5577210-79ce-4725-b97e-d618a877e4ae" />
+<img width="1915" height="1198" alt="image" src="https://github.com/user-attachments/assets/74429669-0683-4014-a513-2c48b1f96c18" />
 
 
 Project structure:
