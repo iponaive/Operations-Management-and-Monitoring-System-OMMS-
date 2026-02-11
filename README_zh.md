@@ -6,7 +6,8 @@
 </br>
 本工具適用對象：企業 RDM、有人力分配議題、專案成本效益議題之部門
 </br>
-
+https://youtu.be/Dmn08rfjo_U
+</br>
 
 
 https://iponaive-omms.streamlit.app/  
