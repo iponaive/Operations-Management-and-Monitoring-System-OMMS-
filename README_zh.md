@@ -6,11 +6,11 @@
 </br>
 本工具適用對象：企業 RDM、有人力分配議題、專案成本效益議題之部門
 </br>
-</br><p align="center">
+<div align="left">
   <a href="https://youtu.be/Dmn08rfjo_U">
-    <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white">
+    <img src="https://img.shields.io/badge/▶_WATCH_DEMO_VIDEO-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch Demo">
   </a>
-</p>
+</div>
 </br>
 
 
