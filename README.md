@@ -6,10 +6,11 @@ Streamlit-based Enterprise Resource Management tool featuring automated case sco
 </br>
 Target Audience:Enterprise RDM, departments facing manpower allocation challenges, and teams focused on project cost-benefit analysis.
 </br>
-</br><p align="center">
+<div align="left">
   <a href="https://youtu.be/Dmn08rfjo_U">
-    <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white">
+    <img src="https://img.shields.io/badge/▶_WATCH_DEMO_VIDEO-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch Demo">
   </a>
+</div>
 </p>
 https://iponaive-omms.streamlit.app/  
 <img width="1920" height="1145" alt="image" src="https://github.com/user-attachments/assets/4b980b80-b1d5-4fb5-8dd5-b9bf9029075b" />
